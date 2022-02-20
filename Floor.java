@@ -38,3 +38,17 @@ public class Calculator {
         return (floor.getArea() * carpet.getCost());
     }
 }
+
+
+// TEST:
+        Carpet carpet = new Carpet(3.5);
+        Floor floor = new Floor(2.75, 4.0);
+        Calculator calculator1 = new Calculator(floor, carpet);
+        System.out.println("Total= "+calculator1.getTotalCost());
+        carpet = new Carpet(1.5);
+        floor = new Floor(5.4, 4.5);
+        calculator1 = new Calculator(floor, carpet);
+        System.out.println("Total= "+calculator1.getTotalCost());
+
+        Total= 38.5
+        Total= 36.45
